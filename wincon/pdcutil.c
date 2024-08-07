@@ -13,8 +13,8 @@ static void beep_thread(LPVOID lpParameter)
     INTENTIONALLY_UNUSED_PARAMETER( lpParameter);
     while( _beep_count)
     {
-        if (!PlaySound((LPCTSTR) SND_ALIAS_SYSTEMDEFAULT, NULL, SND_ALIAS_ID))
-            Beep(800, 200);
+        // if (!PlaySound((LPCTSTR) SND_ALIAS_SYSTEMDEFAULT, NULL, SND_ALIAS_ID))
+        //     Beep(800, 200);
         _beep_count--;
     }
 }
